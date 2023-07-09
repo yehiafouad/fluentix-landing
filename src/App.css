@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+/* "Hanken Grotesk", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", */
+html * {
+  font-family: brandon-grotesque, sans-serif !important;
+}
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button {
+  @apply bg-red-600 border-none hover:bg-red-400 text-white transition-colors duration-300 ml-2 !important;
+}
+.hero {
+  background-image: url("./assets/images/home/bg-3.svg") !important;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
+}
+/* .mark-visible .slick-list {
+  overflow: visible !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slick-active,
+.slick-current,
+.slick-cloned,
+.slick-slide {
+  transition: transform 500ms ease-in-out !important;
+}
+.slick-current:hover,
+.slick-active:hover,
+.slick-cloned:hover {
+  transform: scale(1.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slick-active:hover .slider-style {
+  @apply shadow-lg;
+} */
+.slider-style {
+  transition: all 500ms ease-in-out !important;
+  @apply bg-white rounded-lg;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section-container {
+  @apply lg:max-w-full md:max-w-[768px] max-w-[640px] px-[2.5rem] md:px-[2rem] lg:px-[1.25rem] lg:mx-[8.25rem];
 }
-
-.App-link {
-  color: #61dafb;
+h3 {
+  @apply text-[2.25rem] leading-[2.25rem];
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  @apply text-[3rem] leading-[3.25rem];
 }

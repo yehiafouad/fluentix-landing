@@ -1,0 +1,3 @@
+.transition-h-300 {
+  transition: height 300ms ease-in !important;
+}
