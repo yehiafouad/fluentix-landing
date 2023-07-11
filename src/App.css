@@ -49,8 +49,9 @@ button {
   @apply lg:max-w-full md:max-w-[768px] max-w-[640px] px-[2.5rem] md:px-[2rem] lg:px-[1.25rem] lg:mx-[8.25rem];
 }
 h3 {
-  @apply text-[2.25rem] leading-[2.25rem];
+  @apply text-[3.25rem] leading-[3.25rem];
 }
 h2 {
-  @apply text-[3rem] leading-[3.25rem];
+  font-size: calc(25.28571px + 2.03571vw) !important;
+  @apply leading-[3.25rem] lg:leading-[5.25rem];
 }

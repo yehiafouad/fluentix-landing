@@ -23,7 +23,7 @@ const Section4 = () => {
                 src={img}
                 width="592"
                 height="317"
-                srcSet={`${img} 1184w, ${img} 300w, ${img} 1055w, ${img} 1121w, ${img} 527w, ${img} 150w, ${img} 600w`}
+                // srcSet={`${img} 1184w, ${img} 300w, ${img} 1055w, ${img} 1121w, ${img} 527w, ${img} 150w, ${img} 600w`}
                 // sizes="(max-width: '.592px.') 100vw, '.592px.'"
                 alt="fitness content streamed on multiple devices."
               />

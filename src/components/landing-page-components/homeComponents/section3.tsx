@@ -58,10 +58,10 @@ const Section3 = () => {
       <div className="section-container space-y-[24px] pb-[80px]">
         {content.map((item) => (
           <div
-            className="group md:flex md:gap-[32px] md:flex-row md:justify-between md:odd:flex-row-reverse items-center py-[24px] md:py-[32px] text-center md:text-left"
+            className="group md:flex md:gap-[20px] md:flex-row md:justify-between md:odd:flex-row-reverse items-center py-[24px] md:py-[22px] text-center md:text-left"
             key={item.key}
           >
-            <div className="space-y-5 md:basis-6/12">
+            <div className="space-y-2 md:basis-8/12">
               <h3 className="lg:group-odd:ml-[104px] lg:group-even:mr-[104px]">
                 {item.title}
               </h3>
@@ -92,7 +92,7 @@ const Section3 = () => {
               </div>
 
               <div className="lg:group-odd:ml-[104px] lg:group-even:mr-[104px]">
-                <p className="lg:text-[1.25rem] text-[1rem] leading-[1.75rem] text-gray-500">
+                <p className="lg:text-[1.5rem] text-[1rem] leading-[2rem] text-gray-500">
                   {item.content}
                 </p>
 
@@ -104,10 +104,10 @@ const Section3 = () => {
               <div className="w-full">
                 <img
                   loading="lazy"
-                  className="drop-shadow-lg object-contain max-h-[418px]"
+                  className="drop-shadow-lg object-contain max-h-[518px]"
                   src={item.img}
                   width="592"
-                  height="418"
+                  height="518"
                   srcSet={`${item.img} 1184w, ${item.img} 300w, ${item.img} 1055w, ${item.img} 850w, ${item.img} 479w, ${item.img} 150w, ${item.img} 600w`}
                   sizes="(max-width: '.592px.') 100vw, '.592px.'"
                   alt="TEDxCambridge using Uscreen's white-label streaming platform."
